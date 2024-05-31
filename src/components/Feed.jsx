@@ -5,6 +5,7 @@ import mapSvg from '../assets/images/svg/map.svg'
 import footerPet from '../assets/images/svg/footerPet.svg'
 import swapSvg from '../assets/images/svg/swipe.svg'
 import heartSvg from '../assets/images/svg/heart.svg'
+import { dataArray } from './comman/Helper';
 
 const Feed = () => {
   const [first, setfirst] = useState("tab1")
@@ -34,7 +35,35 @@ const Feed = () => {
         {
           first === "tab1" &&
           <div>
-            tab-1
+            <div className=' overflow-y-scroll my-scroll max-w-[393px] h-[634px]'>
+      <div className={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        {dataArray.map((dataItem) => (
+          <div key={dataItem.id} className='max-w-[361px] rounded-s border bg-lightWhite p-2 mb-2'>
+            <div className='flex justify-between items-center'>
+              <div className='flex gap-2'>
+                <img src={dataItem.img} alt="fishgreen" />
+                <div>
+                  <p className='font-Inter text-base leading-[19px]'> 
+                    <span className='text-darkBlack'>16982</span>
+                    <span className='text-lightBrown'> attacked</span>
+                    <span className='text-darkBlack'> Retardio</span>
+                  </p>
+                  <p className='text-base font-Inter leading-[19px]'>
+                    <span className='font-normal text-lightBrown'> and</span>
+                    {/* <span className={`font-bold ${dataItem.loss.includes('won') ? 'text-lightGreen' : 'text-red'}`}>
+                      {dataItem.text}
+                    </span> */}
+                  </p>
+                </div>
+              </div>
+              <p className='font-Inter font-normal text-[12px] leading-[14px]'>
+                13mn ago
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
           </div>
         }
         {
@@ -43,7 +72,7 @@ const Feed = () => {
             <div className=' flex items-center gap-[6px] mb-2'>
               <span
                 onClick={handle}
-                className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open ? " bg-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] " : ""}`}>
+                className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open ? " !bg-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] " : ""}`}>
                 <span
                   className={`flex w-[10.6px] h-[9.6px] bg-lightGreen rounded-full !shadow-[inset_2px_2px_0px_0px_#0C0A0980]  absolute  duration-300 ${open ? "left-[19px] !bg-lightWhite !shadow-[1px_1px_0px_0px_#16653480]" : "left-[4px]"}`}
                 ></span>
@@ -65,31 +94,31 @@ const Feed = () => {
       </div>
       <div className='bg-lightWhite flex items-center h-[69px] px-[21.5px]'>
         <div className=' flex justify-between items-center w-[350px]'>
-          <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && "!bg-lightCreem !flex !items-center !justify-center !flex-col"}  `}>
+          <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && " !bg-lightCreem !flex !items-center !justify-center !flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
               <img src={threeLine} alt="threeLine" />
               <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
             </div>
           </div>
-          <div onClick={() => tabchanges("tab4")} className={` ${first === "tab4" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+          <div onClick={() => tabchanges("tab4")} className={` ${first === "tab4" && " !bg-lightCreem !flex !items-center !justify-center !flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
               <img src={mapSvg} alt="mapSvg" />
               <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
             </div>
           </div>
-          <div onClick={() => tabchanges("tab5")} className={` ${first === "tab5" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+          <div onClick={() => tabchanges("tab5")} className={` ${first === "tab5" && " !bg-lightCreem !flex !items-center !justify-center !flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
               <img src={footerPet} alt="footerPet" />
               <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
             </div>
           </div>
-          <div onClick={() => tabchanges("tab6")} className={` ${first === "tab6" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+          <div onClick={() => tabchanges("tab6")} className={` ${first === "tab6" && " !bg-lightCreem !flex !items-center !justify-center !flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
               <img src={swapSvg} alt="swapSvg" />
               <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
             </div>
           </div>
-          <div onClick={() => tabchanges("tab7")} className={` ${first === "tab7" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+          <div onClick={() => tabchanges("tab7")} className={` ${first === "tab7" && " !bg-lightCreem !flex !items-center !justify-center !flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
               <img src={heartSvg} alt="heartSvg" />
               <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>

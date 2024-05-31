@@ -7,15 +7,13 @@ const Navsection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState('#36985');
 
-  // Function to toggle dropdown visibility
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  // Function to handle tab selection
   const handleTabSelect = (tab) => {
     setSelectedTab(tab);
-    setIsOpen(false); // Close the dropdown after selection
+    setIsOpen(false); 
   };
 
   return (
