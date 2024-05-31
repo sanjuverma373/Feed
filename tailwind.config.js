@@ -15,11 +15,13 @@ module.exports = {
         lightBrown: '#44403C',
         lightWhite: '#F0FDF4',
         lightPink: '#F1DBDB',
-        darkSky: '#C4DFCE',
+        darkSky: '#CBECD6',
         lightBrown2: '#345742',
+        lightSky2: '#86AA93',
+        red: '##651616',
       },
       fontFamily:{
-        Inter: 'Inter, sans-serif'
+        Inter: "Inter, sans-serif",
       }
     },
   },
