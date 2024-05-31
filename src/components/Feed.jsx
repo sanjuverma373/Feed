@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import Navsection from './Navsection'
+import threeLine from '../assets/images/svg/threeLine.svg'
+import mapSvg from '../assets/images/svg/map.svg'
+import footerPet from '../assets/images/svg/footerPet.svg'
+import swapSvg from '../assets/images/svg/swipe.svg'
+import heartSvg from '../assets/images/svg/heart.svg'
 
 const Feed = () => {
   const [first, setfirst] = useState("tab1")
@@ -57,7 +62,40 @@ const Feed = () => {
             </div>
           </div>
         }
-
+      </div>
+      <div className='bg-lightWhite flex items-center h-[69px] px-[21.5px]'>
+        <div className=' flex justify-between items-center w-[350px]'>
+          <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && "!bg-lightCreem !flex !items-center !justify-center !flex-col"}  `}>
+            <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+              <img src={threeLine} alt="threeLine" />
+              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
+            </div>
+          </div>
+          <div onClick={() => tabchanges("tab4")} className={` ${first === "tab4" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
+              <img src={mapSvg} alt="mapSvg" />
+              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
+            </div>
+          </div>
+          <div onClick={() => tabchanges("tab5")} className={` ${first === "tab5" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
+              <img src={footerPet} alt="footerPet" />
+              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
+            </div>
+          </div>
+          <div onClick={() => tabchanges("tab6")} className={` ${first === "tab6" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
+              <img src={swapSvg} alt="swapSvg" />
+              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
+            </div>
+          </div>
+          <div onClick={() => tabchanges("tab7")} className={` ${first === "tab7" && " bg-lightCreem flex items-center justify-center flex-col"}  `}>
+            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
+              <img src={heartSvg} alt="heartSvg" />
+              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

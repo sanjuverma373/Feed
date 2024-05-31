@@ -1,12 +1,11 @@
 import './App.css';
-import Feed from './components/Feed';
-import bgImg from '../src/assets/images/webp/bgImg.avif'
+import Feed from './components/Feed'
 
 function App() {
   return (
-    <div>
-      <Feed/>
-    </div>
+    <>
+    <Feed/>
+    </>
   );
 }
 
