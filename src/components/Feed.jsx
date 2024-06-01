@@ -66,7 +66,7 @@ const Feed = () => {
             <div className=' overflow-y-scroll my-scroll max-w-[393px] h-[634px]'>
               <div className={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {dataArray.map((dataItem) => (
-                  <div key={dataItem.id} className='max-w-[361px] rounded-s border bg-lightWhite p-2 mb-2'>
+                  <div key={dataItem.id} className='max-w-[361px] rounded-[4px] border-none bg-lightWhite p-2 mb-2'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2'>
                         <img src={dataItem.img} alt="fishgreen" />
@@ -122,7 +122,7 @@ const Feed = () => {
                     {myArray.map((Item) => (
                       <div
                         key={Item.id}
-                        className="max-w-[361px] h-[50px] rounded-s border bg-lightWhite py-1 px-2 mb-1"
+                        className="max-w-[361px] h-[50px] rounded-[4px] border-none bg-lightWhite py-1 px-2 mb-1"
                       >
                         <div className="flex justify-between items-center">
                           <div className="flex gap-2 items-center">
