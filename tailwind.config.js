@@ -18,7 +18,7 @@ module.exports = {
         darkSky: '#CBECD6',
         lightBrown2: '#345742',
         lightSky2: '#86AA93',
-        red: '##651616',
+        lightRed: '#651616',
       },
       fontFamily:{
         Inter: "Inter, sans-serif",
