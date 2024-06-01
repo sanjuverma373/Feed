@@ -116,13 +116,13 @@ const Feed = () => {
                 </span>
                 <p className=' font-Inter font-normal text-xs leading-[14.52px] text-darkBrown'>My pets</p>
               </div>
-              <div className="bg-lightCreem max-w-[393px] h-[536px]  mx-auto px-4 overflow-hidden">
-                <div className=" overflow-y-scroll my-scroll max-w-[393px] h-[634px]">
+              <div className="bg-lightCreem max-w-[393px] h-[536px]  mx-auto overflow-hidden">
+                <div className=" overflow-y-scroll my-scroll max-w-[393px] h-[536px]">
                   <div className={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
                     {myArray.map((Item) => (
                       <div
                         key={Item.id}
-                        className="max-w-[361px] rounded-s border bg-lightWhite p-2 mb-2"
+                        className="max-w-[361px] h-[50px] rounded-s border bg-lightWhite p-1 mb-1"
                       >
                         <div className="flex justify-between items-center">
                           <div className="flex gap-2 items-center">
