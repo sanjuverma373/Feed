@@ -122,7 +122,7 @@ const Feed = () => {
                     {myArray.map((Item) => (
                       <div
                         key={Item.id}
-                        className="max-w-[361px] h-[50px] rounded-s border bg-lightWhite p-1 mb-1"
+                        className="max-w-[361px] h-[50px] rounded-s border bg-lightWhite py-1 px-2 mb-1"
                       >
                         <div className="flex justify-between items-center">
                           <div className="flex gap-2 items-center">
