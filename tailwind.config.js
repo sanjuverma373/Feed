@@ -20,6 +20,7 @@ module.exports = {
         lightSky2: '#86AA93',
         lightSky3: '#C4DFCE',
         lightpurple:'#D6D3D1',
+        lightpurple2:'#F0F6EF',
       },
       fontFamily:{
         Inter: "Inter, sans-serif",
