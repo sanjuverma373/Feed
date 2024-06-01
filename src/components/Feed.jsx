@@ -34,7 +34,7 @@ const Feed = () => {
   }
   
   return (
-    <div className=' bg-lightCreem min-h-[825px] max-w-[393px] mx-auto relative'>
+    <div className=' bg-lightCreem min-h-[852px] max-w-[393px] mx-auto relative'>
       <Navsection />
       <div className=' px-4 mx-auto w-full pt-[22px]'>
 
@@ -106,7 +106,7 @@ const Feed = () => {
                 </span>
                 <p className=' font-Inter font-normal text-xs leading-[14.52px] text-darkBrown'>Show Bonkable (32)</p>
               </div>
-              <div className=' flex items-center gap-[6px] mb-2'>
+              <div className=' flex items-center gap-[6px] mb-4'>
                 <span
                   onClick={handle1}
                   className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open1 ? " !bg-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] " : ""}`}>
