@@ -34,7 +34,7 @@ const Feed = () => {
   }
   
   return (
-    <div className=' bg-lightCreem min-h-[852px] max-w-[393px] mx-auto relative'>
+    <div className=' bg-lightCreem h-screen overflow-hidden  max-w-[393px] mx-auto relative'>
       <Navsection />
       <div className=' px-4 mx-auto w-full'>
 
@@ -169,7 +169,7 @@ const Feed = () => {
           </div>
         }
       </div>
-      <div className=' absolute bottom-0 bg-lightWhite flex items-center h-[69px] px-[21.5px] w-full'>
+      <div className=' absolute bottom-0 bg-lightWhite left-0 right-0 border-t border-lightSky3 flex items-center h-[69px] px-[21.5px] w-full'>
         <div className=' flex justify-between items-center max-w-[350px]'>
           <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
