@@ -27,7 +27,7 @@ const Feed = () => {
     setopen1(!open1);
   }
   return (
-    <div className=' bg-lightCreem min-h-[825px] max-w-[393px] mx-auto'>
+    <div className=' bg-lightCreem min-h-[825px] max-w-[393px] mx-auto relative'>
       <Navsection />
       <div className=' px-4 mx-auto w-full pt-[22px]'>
 
@@ -50,8 +50,8 @@ const Feed = () => {
           </div>
         }
         <div className=' flex items-center justify-center gap-2 pb-4'>
-          <button onClick={() => tabchanges("tab1")} className={` ${first === "tab1" && " !border !border-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown "} shadow-[1px_1px_0px_0px_#CBECD6] w-[98px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px] `}>All</button>
-          <button onClick={() => tabchanges("tab2")} className={` ${first === "tab2" && " !border !border-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown "} shadow-[1px_1px_0px_0px_#CBECD6] w-[109px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px] `}>Leaderboard</button>
+          <button onClick={() => tabchanges("tab1")} className={` ${first === "tab1" && " !border !border-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[98px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px] `}>All</button>
+          <button onClick={() => tabchanges("tab2")} className={` ${first === "tab2" && " !border !border-lightGreen !shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[109px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px] `}>Leaderboard</button>
         </div>
         {
           first === "tab1" &&
@@ -161,8 +161,8 @@ const Feed = () => {
           </div>
         }
       </div>
-      <div className='bg-lightWhite flex items-center h-[69px] px-[21.5px]'>
-        <div className=' flex justify-between items-center w-[350px]'>
+      <div className=' absolute bottom-0 bg-lightWhite flex items-center h-[69px] px-[21.5px] w-full'>
+        <div className=' flex justify-between items-center max-w-[350px]'>
           <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
             <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
               <img src={threeLine} alt="threeLine" />
