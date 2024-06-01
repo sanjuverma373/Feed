@@ -11,6 +11,12 @@ import hummerImg from '../assets/images/svg/hummer.svg';
 import sandWatchImg from '../assets/images/svg/sandwatch.svg';
 
 const Feed = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   const [first, setfirst] = useState("tab1")
   function tabchanges(tabs) {
     setfirst(tabs)
@@ -26,6 +32,7 @@ const Feed = () => {
   function handle1() {
     setopen1(!open1);
   }
+  
   return (
     <div className=' bg-lightCreem min-h-[825px] max-w-[393px] mx-auto relative'>
       <Navsection />
@@ -144,13 +151,14 @@ const Feed = () => {
                             </div>
                           </div>
                           <button
-                            className={` border rounded-[6px] max-w-[100px] w-full shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-between  border-solid p-[9.5px_16px]  border-[#16653480] ${myArray.opacity}`}
-                          >
-                            <img src={Item.img} alt="shield" />
-                            <span className="font-normal font-Inter text-xs leading-[14.52px] tracking-[1%] text-black">
-                              {Item.text}
-                            </span>
-                          </button>
+                    onClick={toggleModal}
+                    className={`border rounded-[6px] max-w-[100px] w-full flex items-center justify-between border-solid p-[9.5px_16px] border-[#16653480] ${Item.id === 3 || Item.id === 10 ? 'shadow-none' : 'shadow-[1px_1px_0px_0px_#16653480]'}`}
+                  >
+                    <img src={Item.img} alt="shield" />
+                    <span className="font-normal font-Inter text-xs leading-[14.52px] tracking-[1%] text-black">
+                      {Item.text}
+                    </span>
+                  </button>
                         </div>
                       </div>
                     ))}
