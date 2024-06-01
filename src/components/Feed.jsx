@@ -36,7 +36,7 @@ const Feed = () => {
   return (
     <div className=' bg-lightCreem min-h-[852px] max-w-[393px] mx-auto relative'>
       <Navsection />
-      <div className=' px-4 mx-auto w-full pt-[22px]'>
+      <div className=' px-4 mx-auto w-full'>
 
         {first === "tab1" &&
           <div className=' flex justify-center pb-[22px]'>
