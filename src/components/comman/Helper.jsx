@@ -15,17 +15,20 @@ export const dataArray = [
     {
       id: 2,
       img:fishpink,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 3,
       img:coin,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 4,
       img:fishpink,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 5,
@@ -35,7 +38,8 @@ export const dataArray = [
     {
       id: 6,
       img:fishpink,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 7,
@@ -55,17 +59,20 @@ export const dataArray = [
     {
       id: 10,
       img:fishgreen,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 11,
       img:fishgreen,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 12,
       img:fishgreen,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 13,
@@ -75,7 +82,8 @@ export const dataArray = [
     {
       id: 14,
       img:fishgreen,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
     {
       id: 15,
@@ -85,7 +93,8 @@ export const dataArray = [
     {
       id: 16,
       img:fishgreen,
-      text: ( <span className='font-bold !text-lightRed'> lost 159.82 points</span> ),
+      text: ( <span className='font-bold !text-[#651616]'> lost 159.82 points</span> ),
+      border: 'border-[1px] border-solid border-[#F1DBDB33]'
     },
 
     
