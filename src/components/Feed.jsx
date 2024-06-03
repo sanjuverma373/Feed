@@ -28,7 +28,7 @@ const Feed = () => {
 
   const handleToggle = () => setOpen(!open);
   const handleToggle1 = () => setOpen1(!open1);
-  
+
 const modalclose = () => {
   setSecondModalOpen(false); 
 
@@ -73,7 +73,7 @@ const modalclose = () => {
           <button onClick={() => tabchanges("tab2")} className={` ${first === "tab2" && "border border-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980] text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[109px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px]`}>Leaderboard</button>
         </div>
         {first === "tab1" && (
-          <div className='overflow-y-scroll my-scroll max-w-[393px] h-[591px]'>
+          <div className='overflow-y-scroll my-scroll max-w-[393px] h-[684px]'>
             <div style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {dataArray.map((dataItem) => (
                 <div
@@ -129,8 +129,8 @@ const modalclose = () => {
                 </span>
                 <p className='font-Inter font-normal text-xs leading-[14.52px] text-darkBrown'>My pets</p>
               </div>
-              <div className="bg-lightCreem max-w-[393px] h-[536px] mx-auto overflow-hidden">
-                <div className="overflow-y-scroll my-scroll max-w-[393px] h-[536px]">
+              <div className="bg-lightCreem max-w-[393px] h-[684px] mx-auto overflow-hidden">
+                <div className="overflow-y-scroll my-scroll max-w-[393px] h-[684px]">
                   <div style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                     {myArray.map((Item) => (
                       <div
