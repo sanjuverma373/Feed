@@ -28,16 +28,16 @@ const Navsection = () => {
             >
               <img className='mr-2' src={petSvg} alt="petSvg" /> 
               <p className='font-Inter font-normal text-base leading-[19.36px]'>{selectedTab}</p> 
-              <img className={`ml-1 ${isOpen ? 'rotate-180' : ''}`} src={dropDownArrow} alt="dropDownArrow" />
+              <img className={`ml-1 text-darkBrown ${isOpen ? 'rotate-180' : ''}`} src={dropDownArrow} alt="dropDownArrow" />
             </button>
             
             {isOpen && (
               <div className='absolute top-full mt-1 w-[100px] bg-white border border-lightSky rounded shadow-md'>
                 <ul>
-                  <li className={`py-1 px-3 hover:bg-gray-100 cursor-pointer ${selectedTab === '#36985' ? 'bg-gray-100' : ''}`} onClick={() => handleTabSelect('#36985')}>#36985</li>
-                  <li className={`py-1 px-3 hover:bg-gray-100 cursor-pointer ${selectedTab === '#36958' ? 'bg-gray-100' : ''}`} onClick={() => handleTabSelect('#36958')}>#36958</li>
-                  <li className={`py-1 px-3 hover:bg-gray-100 cursor-pointer ${selectedTab === '#36895' ? 'bg-gray-100' : ''}`} onClick={() => handleTabSelect('#36895')}>#36895</li>
-                  <li className={`py-1 px-3 hover:bg-gray-100 cursor-pointer ${selectedTab === '#39685' ? 'bg-gray-100' : ''}`} onClick={() => handleTabSelect('#39685')}>#39685</li>
+                  <li className={`py-1 px-3 hover:bg-gray-100 !text-darkBrown cursor-pointer ${selectedTab === '#36985' ? 'bg-gray-100' : '!text-darkBrown'}`} onClick={() => handleTabSelect('#36985')}>#36985</li>
+                  <li className={`py-1 px-3 hover:bg-gray-100 !text-darkBrown cursor-pointer ${selectedTab === '#36958' ? 'bg-gray-100' : '!text-darkBrown'}`} onClick={() => handleTabSelect('#36958')}>#36958</li>
+                  <li className={`py-1 px-3 hover:bg-gray-100 !text-darkBrown cursor-pointer ${selectedTab === '#36895' ? 'bg-gray-100' : '!text-darkBrown'}`} onClick={() => handleTabSelect('#36895')}>#36895</li>
+                  <li className={`py-1 px-3 hover:bg-gray-100 !text-darkBrown cursor-pointer ${selectedTab === '#39685' ? 'bg-gray-100' : '!text-darkBrown'}`} onClick={() => handleTabSelect('#39685')}>#39685</li>
                 </ul>
               </div>
             )}

@@ -63,10 +63,10 @@ const Feed = () => {
         {
           first === "tab1" &&
           <div>
-            <div className=' overflow-y-scroll my-scroll max-w-[393px] h-[634px]'>
+            <div className=' overflow-y-scroll my-scroll max-w-[393px] h-[591px]'>
               <div className={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {dataArray.map((dataItem) => (
-                  <div key={dataItem.id} className='max-w-[361px] rounded-[4px] border border-lightpurple2 bg-lightWhite p-2 mb-2'>
+                  <div key={dataItem.id} className='max-w-[361px] h-[54px] rounded-[4px] border border-lightpurple2 bg-lightWhite p-2 mb-2'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2'>
                         <img src={dataItem.img} alt="fishgreen" />
@@ -171,36 +171,55 @@ const Feed = () => {
       </div>
       <div className=' absolute bottom-0 bg-lightWhite left-0 right-0 border-t border-lightSky3 flex items-center h-[69px] px-[21.5px] w-full'>
         <div className=' flex justify-between items-center max-w-[350px]'>
-          <div onClick={() => tabchanges("tab3")} className={` ${first === "tab3" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
-            <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
-              <img src={threeLine} alt="threeLine" />
-              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Feed</p>
-            </div>
-          </div>
-          <div onClick={() => tabchanges("tab4")} className={` ${first === "tab4" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
-            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
-              <img src={mapSvg} alt="mapSvg" />
-              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Explore</p>
-            </div>
-          </div>
-          <div onClick={() => tabchanges("tab5")} className={` ${first === "tab5" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
-            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
-              <img src={footerPet} alt="footerPet" />
-              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>My Pets</p>
-            </div>
-          </div>
-          <div onClick={() => tabchanges("tab6")} className={` ${first === "tab6" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
-            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
-              <img src={swapSvg} alt="swapSvg" />
-              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Swap</p>
-            </div>
-          </div>
-          <div onClick={() => tabchanges("tab7")} className={` ${first === "tab7" && " bg-lightCreem flex items-center justify-center flex-col "} cursor-pointer`}>
-            <div className="flex w-[70px] h-[53px] flex-col justify-center  items-center">
-              <img src={heartSvg} alt="heartSvg" />
-              <p className=' font-Inter font-normal text-[11px] leading-[13.31px] text-darkBrown'>Account</p>
-            </div>
-          </div>
+        <div 
+  onClick={() => tabchanges("tab3")} 
+  className={`cursor-pointer ${first === "tab3" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+>
+  <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+    <img src={threeLine} alt="mapSvg" />
+    <p className='font-Inter font-normal text-[11px] leading-[13.31px] !text-darkBrown'>Feed</p>
+  </div>
+</div>
+<div 
+  onClick={() => tabchanges("tab4")} 
+  className={`cursor-pointer ${first === "tab4" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+>
+  <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+    <img src={mapSvg} alt="mapSvg" />
+    <p className='font-Inter font-normal text-[11px] leading-[13.31px] !text-darkBrown'>Explore</p>
+  </div>
+</div>
+
+<div 
+  onClick={() => tabchanges("tab5")} 
+  className={`cursor-pointer ${first === "tab5" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+>
+  <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+    <img src={footerPet} alt="mapSvg" />
+    <p className='font-Inter font-normal text-[11px] leading-[13.31px] !text-darkBrown'>My Pets</p>
+  </div>
+</div>
+
+<div 
+  onClick={() => tabchanges("tab6")} 
+  className={`cursor-pointer ${first === "tab6" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+>
+  <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+    <img src={swapSvg} alt="mapSvg" />
+    <p className='font-Inter font-normal text-[11px] leading-[13.31px] !text-darkBrown'>Swap</p>
+  </div>
+</div>
+
+<div 
+  onClick={() => tabchanges("tab7")} 
+  className={`cursor-pointer ${first === "tab7" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+>
+  <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
+    <img src={heartSvg} alt="mapSvg" />
+    <p className='font-Inter font-normal text-[11px] leading-[13.31px] !text-darkBrown'>Account</p>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
