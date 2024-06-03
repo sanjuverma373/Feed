@@ -110,10 +110,10 @@ const modalclose = () => {
               <div className='flex items-center gap-[6px] mb-2'>
                 <span
                   onClick={handleToggle}
-                  className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open ? "bg-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980]" : ""}`}
+                  className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open ? "!bg-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980]" : ""}`}
                 >
                   <span
-                    className={`flex w-[10.6px] h-[9.6px] bg-lightGreen rounded-full shadow-[inset_2px_2px_0px_0px_#0C0A0980] absolute duration-300 ${open ? "left-[19px] bg-lightWhite shadow-[1px_1px_0px_0px_#16653480]" : "left-[4px]"}`}
+                    className={`flex w-[10.6px] h-[9.6px] bg-lightGreen rounded-full shadow-[inset_2px_2px_0px_0px_#0C0A0980] absolute duration-300 ${open ? "left-[19px] !bg-lightWhite shadow-[1px_1px_0px_0px_#16653480]" : "left-[4px]"}`}
                   ></span>
                 </span>
                 <p className='font-Inter font-normal text-xs leading-[14.52px] text-darkBrown'>Show Bonkable (32)</p>
@@ -121,10 +121,10 @@ const modalclose = () => {
               <div className='flex items-center gap-[6px] mb-4'>
                 <span
                   onClick={handleToggle1}
-                  className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open1 ? "bg-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980]" : ""}`}
+                  className={`flex w-[32px] h-[16px] rounded-full bg-lightWhite relative shadow-[1px_1px_0px_0px_#16653480] items-center cursor-pointer ${open1 ? "!bg-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980]" : ""}`}
                 >
                   <span
-                    className={`flex w-[10.6px] h-[9.6px] bg-lightGreen rounded-full shadow-[inset_2px_2px_0px_0px_#0C0A0980] absolute duration-300 ${open1 ? "left-[19px] bg-lightWhite shadow-[1px_1px_0px_0px_#16653480]" : "left-[4px]"}`}
+                    className={`flex w-[10.6px] h-[9.6px] bg-lightGreen rounded-full shadow-[inset_2px_2px_0px_0px_#0C0A0980] absolute duration-300 ${open1 ? "left-[19px] !bg-lightWhite shadow-[1px_1px_0px_0px_#16653480]" : "left-[4px]"}`}
                   ></span>
                 </span>
                 <p className='font-Inter font-normal text-xs leading-[14.52px] text-darkBrown'>My pets</p>

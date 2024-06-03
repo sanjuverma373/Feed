@@ -142,7 +142,7 @@ export const dataArray = [
     {
       id: 6,
       img: Hammer,
-      text: "Shield",
+      text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
       type: "Bonk" 
@@ -190,7 +190,7 @@ export const dataArray = [
     {
       id: 12,
       img: Shield,
-      text: "Bonk",
+      text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
       type: "Bonk" 
@@ -206,7 +206,23 @@ export const dataArray = [
     {
       id: 14,
       img: Shield,
+      text: "Shield",
+      opacity: "opacity-[1]",
+      shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
+    },
+    {
+      id: 15,
+      img: Hammer,
       text: "Bonk",
+      opacity: "opacity-[1]",
+      shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
+    },
+    {
+      id: 16,
+      img: Shield,
+      text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
       type: "Bonk" 
