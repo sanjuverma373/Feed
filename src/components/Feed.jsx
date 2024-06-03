@@ -222,8 +222,8 @@ const modalclose = () => {
       <div className='absolute z-20 bottom-0 bg-lightWhite left-0 right-0 border-t border-lightSky3 flex items-center h-[69px] px-[21.5px] w-full'>
         <div className='flex justify-between items-center max-w-[350px]'>
           <div
-            onClick={() => tabchanges("tab3")}
-            className={`cursor-pointer ${first === "tab3" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+            onClick={() => tabchanges("tab1")}
+            className={`cursor-pointer ${first === "tab1" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
           >
             <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
               <img src={threeLine} alt="mapSvg" />
