@@ -69,8 +69,8 @@ const modalclose = () => {
           </div>
         }
         <div className='flex items-center justify-center gap-2 pb-4'>
-          <button onClick={() => tabchanges("tab1")} className={` ${first === "tab1" && "border border-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980] text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[98px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px]`}>All</button>
-          <button onClick={() => tabchanges("tab2")} className={` ${first === "tab2" && "border border-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980] text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[109px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px]`}>Leaderboard</button>
+          <button onClick={() => tabchanges("tab1")} className={` ${first === "tab1" && "border !border-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[98px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px]`}>All</button>
+          <button onClick={() => tabchanges("tab2")} className={` ${first === "tab2" && "border !border-lightGreen shadow-[inset_2px_2px_0px_0px_#0C0A0980] !text-darkBrown !bg-lightWhite "} shadow-[1px_1px_0px_0px_#CBECD6] w-[109px] h-[32px] flex justify-center items-center text-lightSky2 font-Inter font-normal bg-transparent border border-lightSky rounded text-base leading-[16px]`}>Leaderboard</button>
         </div>
         {first === "tab1" && (
           <div className='overflow-y-scroll my-scroll max-w-[393px] h-[684px]'>
@@ -149,8 +149,7 @@ const modalclose = () => {
                                 <span className="text-lightBrown font-normal text-base leading-[19px]">
                                   Based.eth
                                 </span>
-                                <span className="font-normal text-[12px] leading-[14px] text-lightpurple">
-                                  id: 73
+                                <span className="font-normal text-[12px] leading-[14px] text-lightpurple"> id: 73
                                 </span>
                               </p>
                               <p className="text-base font-Inter leading-[19px] text-lightGreen font-bold">
@@ -163,7 +162,7 @@ const modalclose = () => {
                           </div>
                           <button
                             onClick={() => popupModal(Item)}
-                            className={`border rounded-[6px] max-w-[100px] w-full flex items-center justify-between border-solid p-[9.5px_16px] border-[#16653480] ${Item.id === 3 || Item.id === 10 ? 'shadow-none' : 'shadow-[1px_1px_0px_0px_#16653480]'}`}
+                            className={`border rounded-[6px] max-w-[100px] w-full flex items-center justify-between border-solid p-[9.5px_16px] border-[#16653480] ${Item.id === 3 || Item.id === 10 ? 'shadow-none bg-none' : 'shadow-[1px_1px_0px_0px_#16653480] bg-lightCreem'}`}
                           >
                             <img src={Item.img} alt="shield" />
                             <span className="font-normal font-Inter text-xs leading-[14.52px] tracking-[1%] text-black">
