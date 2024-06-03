@@ -22,6 +22,7 @@ module.exports = {
         lightpurple:'#D6D3D1',
         lightpurple2:'#F0F6EF',
         lightred1:'#651616',
+        green:'#166534',
       },
       fontFamily:{
         Inter: "Inter, sans-serif",

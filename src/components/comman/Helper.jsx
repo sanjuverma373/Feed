@@ -106,6 +106,7 @@ export const dataArray = [
       text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "shield" 
     },
     {
       id: 2,
@@ -113,6 +114,7 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
     {
       id: 3,
@@ -127,6 +129,7 @@ export const dataArray = [
       text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "shield" 
     },
     {
       id: 5,
@@ -134,6 +137,7 @@ export const dataArray = [
       text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "shield" 
     },
     {
       id: 6,
@@ -141,6 +145,7 @@ export const dataArray = [
       text: "Shield",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
     {
       id: 7,
@@ -148,6 +153,7 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
     {
       id: 8,
@@ -155,6 +161,7 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
     {
       id: 9,
@@ -162,6 +169,7 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-none",
+      type: "Bonk" 
     },
     
     {
@@ -177,6 +185,7 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
     {
       id: 12,
@@ -184,5 +193,6 @@ export const dataArray = [
       text: "Bonk",
       opacity: "opacity-[1]",
       shadow: "shadow-[1px1px_0px_0px#16653480]",
+      type: "Bonk" 
     },
   ];
