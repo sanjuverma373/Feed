@@ -10,6 +10,9 @@ import mapSvg from '../assets/images/svg/map.svg';
 import footerPet from '../assets/images/svg/footerPet.svg';
 import swapSvg from '../assets/images/svg/swipe.svg';
 import heartSvg from '../assets/images/svg/heart.svg';
+import SwapNavbar from './SwapNavbar';
+import PetsNavbar from './PetsNavbar';
+import AccountNavbar from './AccountNavbar';
 
 const Feed = () => {
   const [first, setFirst] = useState("tab1");
@@ -20,10 +23,24 @@ const Feed = () => {
 
   return (
     <div className='bg-lightCreem h-screen overflow-hidden max-w-[393px] mx-auto relative'>
-      <Navsection />
+      {first === "tab1" &&  (
+        <Navsection />
+      )}
+      {first === "tab2" &&  (
+        <Navsection />
+      )}
+      {first === "tabSwap" && (
+        <SwapNavbar />
+      )}
+      {first === "tabPets" && (
+        <PetsNavbar/>
+      )}
+      {first === "tabAccount" && (
+        <AccountNavbar/>
+      )}
       <div className='px-4 mx-auto w-full'>
         {first !== "tabSwap" && (
-          <> 
+          <>
             {first === "tab1" && (
               <div className='flex justify-center pb-[22px]'>
                 <div className='w-[183px] h-[23px] bg-lightWhite rounded flex items-center justify-center gap-1'>
@@ -53,7 +70,7 @@ const Feed = () => {
             <Tab1 />
           </div>
         )}
-        {first === "tab2" && (                         
+        {first === "tab2" && (
           <div>
             <Tab2 />
           </div>
@@ -62,7 +79,7 @@ const Feed = () => {
           <div>
             <Swap />
           </div>
-        )}  
+        )}
       </div>
       <div className='absolute z-20 bottom-0 bg-lightWhite left-0 right-0 border-t border-lightSky3 flex items-center h-[69px] px-[21.5px] w-full'>
         <div className='flex justify-between items-center max-w-[350px]'>

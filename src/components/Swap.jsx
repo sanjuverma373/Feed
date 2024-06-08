@@ -11,12 +11,20 @@ const Swap = () => {
         const tabchanges = (tabs) => {
                 setFirst(tabs);
         };
+        const handleCopy = () => {
+                const textToCopy = '0xff0c...3e105';
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                  alert('Address copied to clipboard!');
+                }).catch((err) => {
+                  console.error('Could not copy text: ', err);
+                });
+              };
         return (
                 <div>
                         <div className='flex justify-center'>
                                 <div className='w-[111px] h-[23px] bg-lightWhite rounded flex items-center justify-center gap-1 mb-[17px]'>
                                         <p className='font-Inter font-normal text-lightGreen text-xs leading-[14.52px]'>0xff0c...3e105</p>
-                                        <img className=' cursor-pointer' src={copySvg} alt="copySvg" />
+                                        <img className='cursor-pointer' src={copySvg} alt="copySvg" onClick={handleCopy} />
                                 </div>
                         </div>
                         <div className=' flex items-center justify-center gap-2'>
