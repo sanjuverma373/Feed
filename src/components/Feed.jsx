@@ -23,7 +23,7 @@ const Feed = () => {
       <Navsection />
       <div className='px-4 mx-auto w-full'>
         {first !== "tabSwap" && (
-          <>
+          <> 
             {first === "tab1" && (
               <div className='flex justify-center pb-[22px]'>
                 <div className='w-[183px] h-[23px] bg-lightWhite rounded flex items-center justify-center gap-1'>
@@ -53,7 +53,7 @@ const Feed = () => {
             <Tab1 />
           </div>
         )}
-        {first === "tab2" && (
+        {first === "tab2" && (                         
           <div>
             <Tab2 />
           </div>
@@ -62,7 +62,7 @@ const Feed = () => {
           <div>
             <Swap />
           </div>
-        )}
+        )}  
       </div>
       <div className='absolute z-20 bottom-0 bg-lightWhite left-0 right-0 border-t border-lightSky3 flex items-center h-[69px] px-[21.5px] w-full'>
         <div className='flex justify-between items-center max-w-[350px]'>
@@ -76,8 +76,8 @@ const Feed = () => {
             </div>
           </div>
           <div
-            onClick={() => tabchanges("tabExplore")}
-            className={`cursor-pointer ${first === "tabExplore" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
+            onClick={() => tabchanges("tab1")}
+            className={`cursor-pointer ${first === "tab1" ? "!bg-lightCreem opacity-100 flex items-center justify-center flex-col" : "opacity-80"}`}
           >
             <div className="flex w-[70px] h-[53px] flex-col justify-center items-center">
               <img src={mapSvg} alt="mapSvg" />
